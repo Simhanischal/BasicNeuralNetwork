@@ -23,4 +23,4 @@ for j in range(50000):
     l2_del = l2_error * sigmoid(layer2,deriv=True)
     weight2 += (layer2.T).dot(l3_del)  
     weight1 += (layer1.T).dot(l2_del)
-print(layer3)  
+print(" Output after training is : \n" +str(layer3))  
